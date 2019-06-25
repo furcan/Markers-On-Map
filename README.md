@@ -17,11 +17,11 @@ https://furcan.github.io/Markers-On-Map/
 
 #### Install
 
-##### [npm](https://www.npmjs.com/package/@furcan/markers-on-map)
+##### [npm](https://www.npmjs.com/package/markers-on-map)
 ```
 npm i markers-on-map
 ```
-##### [yarn](https://yarnpkg.com/en/package/@furcan/markers-on-map)
+##### [yarn](https://yarnpkg.com/en/package/markers-on-map)
 ```
 yarn add markers-on-map
 ```
