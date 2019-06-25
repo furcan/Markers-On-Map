@@ -1,0 +1,40 @@
+{
+  "name": "markers-on-map",
+  "main": "dist/markers-on-map-1.0.0.js",
+  "version": "1.0.0",
+  "description": "Use highly customizable maps (Google Maps) with multiple custom Markers in your web projects.",
+  "homepage": "https://github.com/furcan/Markers-On-Map",
+  "files": [
+    "dist"
+  ],
+  "keywords": [
+    "google maps",
+    "maps",
+    "markers on map",
+    "map markers",
+    "custom markers",
+    "map icons",
+    "google map markers",
+    "google places",
+    "map infowindow",
+    "customize map",
+    "multiple markers"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/furcan/Markers-On-Map.git"
+  },
+  "bugs": {
+    "url": "https://github.com/furcan/Markers-On-Map/issues"
+  },
+  "author": "Furkan MT (https://github.com/furcan)",
+  "contributors": [
+    "Furkan MT (https://github.com/furcan)"
+  ],
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://opensource.org/licenses/MIT"
+    }
+  ]
+}

@@ -1,0 +1,239 @@
+﻿<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <title>Markers On Map | Highly customizable maps (Google Maps) with multiple custom Markers.</title>
+    <meta name="description" content="Markers On Map | Use highly customizable maps (Google Maps) with multiple custom Markers in your web projects." />
+
+    <meta name="content-language" content="en" />
+    <meta name="language" content="English" />
+    <meta name="robots" content="index, follow, noodp, noydir" />
+    <meta name="googlebot" content="index, follow, noodp, noydir" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <link rel="shortcut icon" href="favicon.png" />
+
+    <link rel="canonical" href="https://furcan.github.io/Markers-On-Map/" />
+
+    <meta name="abstract" content="Markers On Map | Use highly customizable maps (Google Maps) with multiple custom Markers in your web projects.">
+    <meta name="author" content="Furcan" />
+    <meta name="generator" content="Furcan" />
+    <meta name="designer" content="Furcan">
+    <meta name="copyright" content="© 2019 Markers On Map. All Rights Reserved.">
+
+    <link rel="dns-prefetch" href="//fonts.googleapis.com" />
+    <link id="FontMuli" href="https://fonts.googleapis.com/css?family=Muli:300,400,600,700,900&display=swap&subset=latin-ext" rel="stylesheet">
+    <link id="FontConsolas" href="https://fonts.googleapis.com/css?family=Inconsolata:400,700&amp;subset=latin-ext" rel="stylesheet">
+
+    <link rel="stylesheet" href="index.css?v=1.0.0">
+
+</head>
+
+<body>
+
+    <div id="Wrapper">
+
+        <div class="map-wrapper">
+            <div id="GoogleMaps"></div>
+
+            <div class="max-content">
+                <div class="head">
+                    <h1 class="logo"><a href="https://furcan.github.io/Markers-On-Map/">Markers On Map<i class="fab fa-js-square"></i></a></h1>
+                    <p class="description">Use highly customizable maps (Google Maps) with multiple custom Markers.</p>
+                </div>
+
+                <div class="get-markersonmap">
+                    <div class="get-it-on">
+                        <p>Get it on</p>
+                        <a href="https://github.com/furcan/Markers-On-Map" rel="noopener" target="_blank" data-toggle="tooltip" title="https://github.com/furcan/Markers-On-Map"><i class="fab fa-github"></i></a>
+                        <a href="https://www.npmjs.com/package/markers-on-map" rel="noopener" target="_blank" data-toggle="tooltip" title="npm i markers-on-map" class="npm"><i class="fab fa-npm"></i></a>
+                        <a href="https://yarnpkg.com/en/package/markers-on-map" rel="noopener" target="_blank" data-toggle="tooltip" title="yarn add markers-on-map"><i class="fab fa-yarn"></i></a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="container basic">
+            <div class="max-content">
+
+                <div class="container-head">
+                    <h2><i class="fas fa-chevron-down"></i>Basic Usage</h2>
+                </div>
+
+                <code id="CodeJS">
+                    <span class="label">JavaScript</span>
+                    <span class="l1"><span class="char">&lt;</span><span class="bool">script</span> <span class="fnc1">src</span>=<span><span class="str">"/Markers-On-Map/dist/markers-on-map-1.0.0.js"</span></span><span class="char">&gt;&lt;/</span><span class="bool">script</span><span class="char">&gt;</span></span>
+                </code>
+
+                <code id="CodeInit">
+                    <span class="label">Initialize</span>
+                    <span class="l1 cmmnt">// Basic initialize</span>
+                    <span class="l1"><span class="fnc1">MarkersOnMap</span>.<span class="fnc2">Init</span>({</span>
+
+
+                    <span class="l1 l2"><span class="fnc1">googleApiKey:</span> <span class="bool">null</span>, <span class="cmmnt">// required => Google Maps JavaScript API Key</span></span>
+
+                    <span class="l1 l2"><span class="fnc1">markerObjects:</span> [</span>
+
+                    <span class="l1 l3 cmmnt">// at least one required => Marker Latitude and Longitude as number</span>
+                    <span class="l1 l3">{</span>
+                    <span class="l1 l4"><span class="fnc1">markerLat:</span> <span class="int">39.925018</span>,</span>
+                    <span class="l1 l4"><span class="fnc1">markerLong:</span> <span class="int">32.836956</span>,</span>
+                    <span class="l1 l3">},</span>
+
+
+                    <span class="l1 l2">],</span>
+
+                    <span class="l1">});</span>
+                </code>
+
+                <code id="CodeRun">
+                    <span class="label">Run</span>
+                    <span class="l1 cmmnt">// Select your element (ID or Class)</span>
+                    <span class="l1"><span class="fnc1">MarkersOnMap</span>.<span class="fnc2">Run</span>(<span class="str the-button">'div#GoogleMaps'</span>);</span>
+                </code>
+
+            </div>
+        </div>
+
+        <div class="container remarker">
+            <div class="max-content">
+
+                <div class="container-head">
+                    <h2><i class="fas fa-map-marker-alt"></i>Remarker</h2>
+                </div>
+
+                <code id="CodeRemarker">
+                    <span class="label">Remarker</span>
+                    <span class="l1 cmmnt">// Use "MarkersOnMap.Remarker()" function to replace all markers to new ones.</span>
+                    <span class="l1 cmmnt">// Call the function with an array includes new marker objects => MarkersOnMap.Remarker([{...},{...},]);</span>
+                    
+                    <span class="l1"><span class="fnc1">MarkersOnMap</span>.<span class="fnc2">Remarker</span>([</span>
+                    <span class="l1 l2 cmmnt">// At least one marker required</span>
+                    <span class="l1 l2">{</span>
+                    <span class="l1 l3"><span class="fnc1">markerLat:</span> <span class="int">39.925018</span>,</span>
+                    <span class="l1 l3"><span class="fnc1">markerLong:</span> <span class="int">32.836956</span>,</span>
+                    <span class="l1 l2">},</span>
+
+                    <span class="l1 l2">{</span>
+                    <span class="l1 l3"><span class="fnc1">markerLat:</span> <span class="int">39.9412639</span>,</span>
+                    <span class="l1 l3"><span class="fnc1">markerLong:</span> <span class="int">32.8495664</span>,</span>
+                    <span class="l1 l2">},</span>
+
+                    <span class="l1">]);</span>
+                </code>
+
+            </div>
+        </div>
+
+        <div class="container advanced">
+            <div class="max-content">
+
+                <div class="container-head">
+                    <h2><i class="fas fa-chevron-down"></i>Advanced Usage</h2>
+                </div>
+
+                <code id="CodeInitAdvanced">
+                    <span class="label">All (Default) Options</span>
+                    <span class="l1 cmmnt">// All options with descriptions</span>
+                    <span class="l1"><span class="fnc1">MarkersOnMap</span>.<span class="fnc2">Init</span>({</span>
+
+
+                    <span class="l1 l2 rqrd" data-toggle="tooltip" title="This option is required"><span class="fnc1">googleApiKey:</span> <span class="bool">null</span>, <span class="cmmnt">// required => Google Maps JavaScript API Key</span></span>
+
+                    <span class="l1 l2"><span class="fnc1">googlePlacesApiEnabled:</span> <span class="bool">false</span>, <span class="cmmnt">// if "Google Maps Places API" enabled on "Google APIs Console" can set "true"</span></span>
+                    <span class="l1 l2"><span class="fnc1">googlePlacesContentButton:</span> <span class="str">'Get Directions'</span>, <span class="cmmnt">// available if "googlePlacesApiEnabled" is "true"</span></span>
+
+                    <span class="l1 l2"><span class="fnc1">mapWidth:</span> <span class="str">'100%'</span>, <span class="cmmnt">// map width</span></span>
+                    <span class="l1 l2"><span class="fnc1">mapHeight:</span> <span class="str">'450px'</span>, <span class="cmmnt">// map height</span></span>
+                    <span class="l1 l2"><span class="fnc1">mapBackgroundColor:</span> <span class="str">'#f8f8f8'</span>, <span class="cmmnt">// map background color</span></span>
+
+                    <span class="l1 l2"><span class="fnc1">mapCenterLat:</span> <span class="int">39.925054</span>, <span class="cmmnt">// center of the world (lat)</span></span>
+                    <span class="l1 l2"><span class="fnc1">mapCenterLong:</span> <span class="int">32.8347552</span>, <span class="cmmnt">// center of the world (long)</span></span>
+
+                    <span class="l1 l2"><span class="fnc1">mapZoomLevel:</span> <span class="int">13</span>, <span class="cmmnt">// map zoom level</span></span>
+                    <span class="l1 l2"><span class="fnc1">mapMinZoom:</span> <span class="int">2</span>, <span class="cmmnt">// map min zoom level</span></span>
+                    <span class="l1 l2"><span class="fnc1">mapMaxZoom:</span> <span class="int">18</span>, <span class="cmmnt">// map max zoom level</span></span>
+
+                    <span class="l1 l2"><span class="fnc1">mapZoomControl:</span> <span class="bool">false</span>, <span class="cmmnt">// map zoom control buttons</span></span>
+                    <span class="l1 l2"><span class="fnc1">mapAnimatedZoom:</span> <span class="bool">false</span>, <span class="cmmnt">// map animated zoom</span></span>
+
+                    <span class="l1 l2"><span class="fnc1">mapTypeId:</span> <span class="str">'roadmap'</span>, <span class="cmmnt">// map type => "ROADMAP" || "SATELLITE" || "HYBRID" || "TERRAIN"</span></span>
+                    <span class="l1 l2"><span class="fnc1">mapTypeControl:</span> <span class="bool">false</span>, <span class="cmmnt">// map type control buttons</span></span>
+
+                    <span class="l1 l2"><span class="fnc1">mapStreetViewControl:</span> <span class="bool">false</span>, <span class="cmmnt">// map street view control buttons</span></span>
+
+                    <span class="l1 l2"><span class="fnc1">mapFullscreenControl:</span> <span class="bool">true</span>, <span class="cmmnt">// map fullscreen control buttons</span></span>
+
+                    <span class="l1 l2"><span class="fnc1">mapRotateControl:</span> <span class="bool">false</span>, <span class="cmmnt">// map rotate control buttons</span></span>
+
+                    <span class="l1 l2"><span class="fnc1">mapScaleControl:</span> <span class="bool">false</span>, <span class="cmmnt">// map scale control buttons</span></span>
+
+                    <span class="l1 l2"><span class="fnc1">mapClickableIcons:</span> <span class="bool">true</span>, <span class="cmmnt">// map clickable points of interest</span></span>
+
+                    <span class="l1 l2"><span class="fnc1">mapDraggable:</span> <span class="bool">true</span>, <span class="cmmnt">// map draggable</span></span>
+
+                    <span class="l1 l2"><span class="fnc1">mapScrollWheel:</span> <span class="bool">true</span>, <span class="cmmnt">// map mouse scroll zoom</span></span>
+
+                    <span class="l1 l2"><span class="fnc1">mapDisableDoubleClickZoom:</span> <span class="bool">false</span>, <span class="cmmnt">// map double click zoom</span></span>
+
+                    <span class="l1 l2"><span class="fnc1">mapStyles:</span> <span class="bool">null</span>, <span class="cmmnt">// map styles => [object] => (snazzymaps or etc. services could be helpful)</span></span>
+
+                    <span class="l1 l2"><span class="fnc1">markerDefaultUrl:</span> <span class="str">'base64'</span>, <span class="cmmnt">// map default marker url (an image url or base64 png/jpg)</span></span>
+
+                    <span class="l1 l2"><span class="fnc1">markerDropAnimation:</span> <span class="str">'drop'</span>, <span class="cmmnt">// map marker animation => "drop" || "bounce" || "null" for off</span></span>
+
+                    <span class="l1 l2"><span class="fnc1">markerAdjustZoom:</span> <span class="bool">true</span>, <span class="cmmnt">// adjust map zoom by markers</span></span>
+
+                    <span class="l1 l2"><span class="fnc1">markerOverlay:</span> <span class="bool">true</span>, <span class="cmmnt">// custom markers img element wrapper</span></span>
+
+                    <span class="l1 l2"><span class="fnc1">markerOverlayClassName:</span> <span class="str">'mom-marker'</span>, <span class="cmmnt">// custom markers wrapper class name => e.g. ".mom-marker img { ...css codes };"</span></span>
+
+
+                    <span class="l1 l2"><span class="fnc1">markerLabel:</span> { <span class="cmmnt">// map markers labels</span></span>
+                    <span class="l1 l3"><span class="fnc1">useLabel:</span> <span class="bool">false</span>, <span class="cmmnt">// map marker use label</span></span>
+                    <span class="l1 l3"><span class="fnc1">labelPosition:</span> <span class="str">'top'</span>, <span class="cmmnt">// map marker label position => "top" || "bottom"</span></span>
+                    <span class="l1 l3"><span class="fnc1">labelFontSize:</span> <span class="str">'12px'</span>, <span class="cmmnt">// map marker label font size</span></span>
+                    <span class="l1 l3"><span class="fnc1">labelFontWeight:</span> <span class="str">'600'</span>, <span class="cmmnt">// map marker label font weight</span></span>
+                    <span class="l1 l3"><span class="fnc1">labelFontFamily:</span> <span class="str">'Roboto'</span>, <span class="cmmnt">// map marker label font family</span></span>
+                    <span class="l1 l2">},</span>
+
+
+                    <span class="l1 l2"><span class="fnc1">markerObjects:</span> [ <span class="cmmnt">// at least one required => Marker Latitude and Longitude as number</span></span>
+                    <span class="l1 l3">{</span>
+                    <span class="l1 l4 rqrd" data-toggle="tooltip" title="This option is required"><span class="fnc1">markerLat:</span> <span class="int">39.925018</span>, <span class="cmmnt">// required => marker latitude</span></span>
+                    <span class="l1 l4 rqrd" data-toggle="tooltip" title="This option is required"><span class="fnc1">markerLong:</span> <span class="int">32.836956</span>, <span class="cmmnt">// required => marker longitude</span></span>
+                    <span class="l1 l4"><span class="fnc1">markerTitle:</span> <span class="str">'Anitkabir'</span>, <span class="cmmnt">// optional => marker title</span></span>
+                    <span class="l1 l4"><span class="fnc1">markerSize:</span> <span class="int">45</span>, <span class="cmmnt">// optional => marker size</span></span>
+                    <span class="l1 l4"><span class="fnc1">markerUrl:</span> <span class="str">'base64'</span>, <span class="cmmnt">// optional => marker url (an image url or base64 png/jpg)</span></span>
+                    <span class="l1 l4"><span class="fnc1">markerLabelText:</span> <span class="str">'MOM'</span>, <span class="cmmnt">// optional => if "markerLabel.usaLabel" is true</span></span>
+                    <span class="l1 l4"><span class="fnc1">markerContent:</span> <span class="bool">null</span>, <span class="cmmnt">// optional => custom html content infowindow when marker clicked</span></span>
+                    <span class="l1 l4"><span class="fnc1">markerContentFromGoogleQuery:</span> <span class="str">'Anitkabir'</span>, <span class="cmmnt">// optional => infowindow from Google Places when marker clicked (if "googlePlacesApiEnabled" is true)</span></span>
+                    <span class="l1 l3">},</span>
+                    <span class="l1 l2">],</span>
+
+                    <span class="l1">});</span>
+                </code>
+
+            </div>
+        </div>
+
+        <footer id="Footer">
+            <p class="copyright">&copy; 2019 Markers On Map. All rights reserved.</p>
+            <a class="github" target="_blank" rel="noopener" href="https://github.com/furcan"><i class="fab fa-github"></i>/furcan</a>
+        </footer>
+
+    </div>
+
+    <script src="dist/markers-on-map-1.0.0.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/notiflix/dist/notiflix-aio-1.6.0.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://kit.fontawesome.com/833245c2e4.js"></script>
+    <script src="index-tooltip.js"></script>
+    <script src="index.js?v=1.0.0"></script>
+</body>
+
+</html>
