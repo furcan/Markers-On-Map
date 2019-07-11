@@ -1,6 +1,6 @@
 /*!
 * Markers On Map ('https://github.com/furcan/Markers-On-Map')
-* Version: 1.0.0
+* Version: 1.1.0
 * Author: Furkan MT ('https://github.com/furcan')
 * Copyright 2019 Markers On Map, MIT Licence ('https://opensource.org/licenses/MIT')*
 */
@@ -18,6 +18,9 @@ MarkersOnMap.Init({
             markerLong: 32.836956,
             markerTitle: 'This marker getting content from Google Places API',
             markerContentFromGoogleQuery: 'Anitkabir',
+            markerCallback: function(){
+                Notiflix.Notify.Success('This is a callback.');
+            },
         },
         {
             markerLat: 39.935986,

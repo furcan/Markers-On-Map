@@ -1,6 +1,6 @@
 /*!
 * Markers On Map ('https://github.com/furcan/Markers-On-Map')
-* Version: 1.0.0
+* Version: 1.1.0
 * Author: Furkan MT ('https://github.com/furcan')
 * Copyright 2019 Markers On Map, MIT Licence ('https://opensource.org/licenses/MIT')*
 */
@@ -126,6 +126,7 @@ height:500px;
 border-radius: 0 0 20% 20%;}
 
 .map-wrapper .head {
+position: relative;
 text-align:center;
 float: left;
 width: 100%;

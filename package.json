@@ -1,7 +1,7 @@
 {
   "name": "markers-on-map",
-  "main": "dist/markers-on-map-1.0.0.js",
-  "version": "1.0.0",
+  "main": "dist/markers-on-map-1.1.0.js",
+  "version": "1.1.0",
   "description": "Use highly customizable maps (Google Maps) with multiple custom Markers in your web projects.",
   "homepage": "https://github.com/furcan/Markers-On-Map",
   "files": [
