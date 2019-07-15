@@ -1,3 +1,8 @@
+@1.2.0
+* **Changed:** Code Review.
+
+-----
+
 @1.1.0
 * **Added:** Can use a callback function for each marker element clicked.
 

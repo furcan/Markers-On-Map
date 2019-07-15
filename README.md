@@ -8,7 +8,7 @@ Use highly customizable maps (Google Maps) with multiple custom Markers in your 
 
 
 ### Current Version
-1.1.0 [*](https://github.com/furcan/Markers-On-Map/blob/master/ReleaseNotes.md)
+1.2.0 [*](https://github.com/furcan/Markers-On-Map/blob/master/ReleaseNotes.md)
 
 ### Website and Demo
 https://furcan.github.io/Markers-On-Map/
@@ -31,7 +31,7 @@ yarn add markers-on-map
 #### 1- JavaScript
 
 ```html
-<script src="dist/markers-on-map-1.1.0.js"></script>
+<script src="dist/markers-on-map-1.2.0.js"></script>
 ```
 
 #### 2- Initialize (Basic)

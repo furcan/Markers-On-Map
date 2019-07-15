@@ -1,13 +1,13 @@
 /*!
 * Markers On Map ('https://github.com/furcan/Markers-On-Map')
-* Version: 1.1.0
+* Version: 1.2.0
 * Author: Furkan MT ('https://github.com/furcan')
 * Copyright 2019 Markers On Map, MIT Licence ('https://opensource.org/licenses/MIT')*
 */
 
 // DEMO: Markers On Map - Init and Run on
 MarkersOnMap.Init({
-    googleApiKey: 'AIzaSyBUV6KcfZOEDTkTMi0OZ1PcVL7QQHCL8U4',
+    googleApiKey: 'AIzaSyBUV6KcfZOEDTkTMi0OZ1PcVL7QQHCL8U4', // this key restricted except this project
     googlePlacesApiEnabled: true,
     mapTypeId: 'terrain',
     mapHeight: '500px',
@@ -32,7 +32,7 @@ MarkersOnMap.Init({
             markerLat: 39.940516,
             markerLong: 32.823702,
             markerTitle: 'This marker has it\'s own custom content',
-            markerContent: '<h3 style="text-align:center;margin:0 0 10px;">Custom Marker Content</h3><p style="text-align:center; margin:0 0 10px;">Custom Marker Description</p><button onclick="Notiflix.Notify.Success(\'Markers On Map\')" style="display:table;margin:auto;padding:8px 12px;border-radius:20px;font-weight:700;background:#502974;color:#fff;cursor:pointer;">Custom Button</button>',
+            markerContent: '<h3 style="text-align:center;margin:0 0 10px;">Custom Marker Content</h3><p style="text-align:center; margin:0 0 10px;">Custom Marker Description</p><button onclick="Notiflix.Notify.Success(\'Custom Button Action\')" style="display:table;margin:auto;padding:8px 12px;border-radius:20px;font-weight:700;background:#502974;color:#fff;cursor:pointer;">Custom Button</button>',
             // markerContentFromGoogleQuery: 'Ataturk Culture Center',
         }
     ],
