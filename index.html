@@ -29,7 +29,7 @@
     <link id="FontMuli" href="https://fonts.googleapis.com/css?family=Muli:300,400,600,700,900&display=swap&subset=latin-ext" rel="stylesheet">
     <link id="FontConsolas" href="https://fonts.googleapis.com/css?family=Inconsolata:400,700&amp;subset=latin-ext" rel="stylesheet">
 
-    <link rel="stylesheet" href="index.css?v=1.2.0">
+    <link rel="stylesheet" href="index.css?v=1.3.0">
 
 </head>
 
@@ -42,7 +42,7 @@
 
             <div class="max-content">
                 <div class="head">
-                    <h1 class="logo" data-toggle="tooltip" title="Current Version: v1.2.0"><a href="https://furcan.github.io/Markers-On-Map/">Markers On Map<i class="fab fa-js-square"></i></a></h1>
+                    <h1 class="logo" data-toggle="tooltip" title="Current Version: v1.3.0"><a href="https://furcan.github.io/Markers-On-Map/">Markers On Map<i class="fab fa-js-square"></i></a></h1>
                     <p class="description">Use highly customizable maps (Google Maps) with multiple custom Markers.</p>
                 </div>
 
@@ -67,7 +67,7 @@
 
                 <code id="CodeJS">
                     <span class="label">JavaScript</span>
-                    <span class="l1"><span class="char">&lt;</span><span class="bool">script</span> <span class="fnc1">src</span>=<span><span class="str">"/Markers-On-Map/dist/markers-on-map-1.2.0.js"</span></span><span class="char">&gt;&lt;/</span><span class="bool">script</span><span class="char">&gt;</span></span>
+                    <span class="l1"><span class="char">&lt;</span><span class="bool">script</span> <span class="fnc1">src</span>=<span><span class="str">"/Markers-On-Map/dist/markers-on-map-1.3.0.js"</span></span><span class="char">&gt;&lt;/</span><span class="bool">script</span><span class="char">&gt;</span></span>
                 </code>
 
                 <code id="CodeInit">
@@ -215,7 +215,9 @@
                     <span class="l1 l4"><span class="fnc1">markerContent:</span> <span class="bool">null</span>, <span class="cmmnt">// optional => custom html content infowindow when marker clicked</span></span>
                     <span class="l1 l4"><span class="fnc1">markerContentFromGoogleQuery:</span> <span class="str">'Anitkabir'</span>, <span class="cmmnt">// optional => infowindow from Google Places when marker clicked (if "googlePlacesApiEnabled" is true)</span></span>
 
-                    <span class="l1 l4" data-toggle="tooltip" title="v1.1.0 and next versions"><span class="fnc1">markerCallback:</span> <span class="bool">null</span>, <span class="cmmnt">// v1.1.0 and next versions => optional => A callback function can be used when marker element clicked</span></span>
+                    <span class="l1 l4" data-toggle="tooltip" title="v1.1.0 and the next versions"><span class="fnc1">markerCallback:</span> <span class="bool">null</span>, <span class="cmmnt">// v1.1.0 and next versions => optional => A callback function can be used when marker element clicked</span></span>
+
+                    <span class="l1 l4" data-toggle="tooltip" title="v1.3.0 and the next versions"><span class="fnc1">closeCallback:</span> <span class="bool">null</span>, <span class="cmmnt">// v1.3.0 and next versions => optional => A callback function can be used when marker infowindow close button element clicked</span></span>
 
                     <span class="l1 l3">},</span>
                     <span class="l1 l2">],</span>
@@ -233,12 +235,12 @@
 
     </div>
 
-    <script src="dist/markers-on-map-1.2.0.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/notiflix/dist/notiflix-aio-1.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/notiflix/dist/notiflix-aio-1.8.0.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://kit.fontawesome.com/833245c2e4.js"></script>
     <script src="index-tooltip.js"></script>
-    <script src="index.js?v=1.2.0"></script>
+    <script src="dist/markers-on-map-1.3.0.js"></script>
+    <script src="index.js?v=1.3.0"></script>
 </body>
 
 </html>

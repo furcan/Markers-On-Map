@@ -1,6 +1,6 @@
 /*!
 * Markers On Map ('https://github.com/furcan/Markers-On-Map')
-* Version: 1.2.0
+* Version: 1.3.0
 * Author: Furkan MT ('https://github.com/furcan')
 * Copyright 2019 Markers On Map, MIT Licence ('https://opensource.org/licenses/MIT')*
 */
@@ -19,7 +19,10 @@ MarkersOnMap.Init({
             markerTitle: 'This marker getting content from Google Places API',
             markerContentFromGoogleQuery: 'Anitkabir',
             markerCallback: function(){
-                Notiflix.Notify.Success('This is a callback.');
+                Notiflix.Notify.Success('This is a marker click callback. (Anitkabir)');
+            },
+            closeCallback: function(){
+                Notiflix.Notify.Info('This is a close button callback. (Anitkabir)');
             },
         },
         {
@@ -27,6 +30,12 @@ MarkersOnMap.Init({
             markerLong: 32.802826,
             markerTitle: 'This marker getting content from Google Places API',
             markerContentFromGoogleQuery: 'Ataturk House',
+            markerCallback: function(){
+                Notiflix.Notify.Success('This is a marker click callback. (Ataturk House)');
+            },
+            closeCallback: function(){
+                Notiflix.Notify.Info('This is a close button callback. (Ataturk House)');
+            },
         },
         {
             markerLat: 39.940516,
@@ -34,6 +43,12 @@ MarkersOnMap.Init({
             markerTitle: 'This marker has it\'s own custom content',
             markerContent: '<h3 style="text-align:center;margin:0 0 10px;">Custom Marker Content</h3><p style="text-align:center; margin:0 0 10px;">Custom Marker Description</p><button onclick="Notiflix.Notify.Success(\'Custom Button Action\')" style="display:table;margin:auto;padding:8px 12px;border-radius:20px;font-weight:700;background:#502974;color:#fff;cursor:pointer;">Custom Button</button>',
             // markerContentFromGoogleQuery: 'Ataturk Culture Center',
+            markerCallback: function(){
+                Notiflix.Notify.Success('This is a marker click callback. (Custom Content)');
+            },
+            closeCallback: function(){
+                Notiflix.Notify.Info('This is a close button callback. (Custom Content)');
+            },
         }
     ],
 });

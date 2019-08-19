@@ -1,3 +1,8 @@
+@1.3.0
+* **Added:** Can use a callback function for each marker infowindow close button element clicked.
+* **Changed:** Code Review.
+
+-----
 @1.2.0
 * **Changed:** Code Review.
 

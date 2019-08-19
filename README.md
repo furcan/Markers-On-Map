@@ -8,7 +8,7 @@ Use highly customizable maps (Google Maps) with multiple custom Markers in your 
 
 
 ### Current Version
-1.2.0 [*](https://github.com/furcan/Markers-On-Map/blob/master/ReleaseNotes.md)
+1.3.0 [*](https://github.com/furcan/Markers-On-Map/blob/master/ReleaseNotes.md)
 
 ### Website and Demo
 https://furcan.github.io/Markers-On-Map/
@@ -31,7 +31,7 @@ yarn add markers-on-map
 #### 1- JavaScript
 
 ```html
-<script src="dist/markers-on-map-1.2.0.js"></script>
+<script src="dist/markers-on-map-1.3.0.js"></script>
 ```
 
 #### 2- Initialize (Basic)
@@ -229,8 +229,11 @@ MarkersOnMap.Init({
       // optional => infowindow from Google Places when marker clicked (if "googlePlacesApiEnabled" is true)
       markerContentFromGoogleQuery: 'Anitkabir', 
 
-      // v1.1.0 and next versions => optional => A callback function can be used when marker element clicked
+      // v1.1.0 and the next versions => optional => A callback function can be used when marker element clicked
       markerCallback: null,
+
+      // v1.3.0 and the next versions => optional => A callback function can be used when marker infowindow close button element clicked
+      closeCallback: null,
     }
   ],
 });
