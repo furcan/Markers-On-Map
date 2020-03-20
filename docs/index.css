@@ -1,8 +1,8 @@
 /*!
 * Markers On Map ('https://github.com/furcan/Markers-On-Map')
-* Version: 1.3.0
+* Version: 1.4.0
 * Author: Furkan MT ('https://github.com/furcan')
-* Copyright 2019 Markers On Map, MIT Licence ('https://opensource.org/licenses/MIT')*
+* Copyright 2020 Markers On Map, MIT Licence ('https://opensource.org/licenses/MIT')*
 */
 
 
@@ -21,8 +21,7 @@ font-size: 15px;
 line-height:18px;	
 font-weight: 400;
 color:#fff;
-background:#282828;
-background: linear-gradient(to right bottom, #474747, #3f3f3f, #373737, #2f2f2f, #282828);}
+background:#282828;}
 
 body, iframe, h1, h2, h3, h4, h5, h6, p, pre, a, strong, u, center, ol, ul, li, fieldset, form, label, table, tbody, tfoot, thead, tr, th, td, footer, header, menu, nav, button {
 text-decoration: none !important;
@@ -77,7 +76,7 @@ width: 4px;}
 ::-webkit-scrollbar-track {
 background:#1e1e1e;}
 ::-webkit-scrollbar-thumb {
-background:#00e676;
+background:#52f183;
 cursor:pointer;}
 
 input[type=number]::-webkit-inner-spin-button, 
@@ -115,15 +114,13 @@ padding: 60px 50px;}
 float: left;
 width: 100%;
 color:#fff;
-background: #502974;
-background: linear-gradient(to right bottom, #502974, #432362, #371d50, #2b173f, #20112e);
+background: #1e1e1e;
 position:relative;}
 
 .map-wrapper div#GoogleMaps {
 color:#20112e;
 width:100%;
-height:500px;
-border-radius: 0 0 20% 20%;}
+height:520px;}
 
 .map-wrapper .head {
 position: relative;
@@ -137,22 +134,34 @@ color:#fff;
 font-size: 38px;
 line-height: 38px;
 font-weight:900;
-margin: 0 0 25px;}
+margin: 0 0 20px;}
 
 .map-wrapper .head h1.logo a {
 color:inherit;}
 
 .map-wrapper .head h1.logo a:hover {
-color:#00e676;}
+color:#52f183;}
 
 .map-wrapper .head h1.logo a i {
 transform:scale(.9) translateY(2px);
-color:#00e676;
+color:#52f183;
 min-width:30px;
 margin-left:6px;}
 
+.map-wrapper .head p.version {
+text-shadow: 0 0 2px rgba(0,0,0,.1), 0 0 10px rgba(0,0,0,.3);
+display: table;
+margin: 0 auto 15px;
+color:#1e1e1e;
+background: #52f183;
+padding: 4px 12px;
+border-radius: 20px;
+font-size: 13px;
+line-height: 13px;
+font-weight: 600;}
+
 .map-wrapper .head p.description {
-color:#00e676;
+color:#f1f1f1;
 font-size: 16px;
 line-height: 20px;}
 
@@ -161,6 +170,7 @@ float: right;
 width: 100%;
 max-width:360px;
 text-align: center;
+margin: 20px 0 0;
 padding: 0 20px;}
 
 .map-wrapper .get-it-on {
@@ -171,6 +181,7 @@ padding: 15px 45px 20px;
 border-radius: 100px;}
 
 .map-wrapper .get-it-on p {
+color: #52f183;
 font-size: 18px;
 line-height: 22px;
 font-weight: 900;
@@ -181,7 +192,10 @@ font-size: 34px;
 line-height: 34px;
 display: inline-table;
 margin: 0 15px;
-color: #00e676;}
+color: #fff;}
+
+.map-wrapper .get-it-on a:hover {
+color: #52f183;}
 
 .map-wrapper .get-it-on a.npm {
 transform: scale(1.8);
@@ -191,14 +205,9 @@ margin:0 20px;}
 
 /* Content on */
 .container {
-background: #474747;
+background: #333030;
 float: left;
 width: 100%;}
-
-.container.advanced,
-.container.remarker,
-.container.basic {
-background: linear-gradient(to right bottom, #474747, #3f3f3f, #373737, #2f2f2f, #282828);}
 
 /* Container Head on */
 .container .container-head {
@@ -209,7 +218,7 @@ width:100%;}
 .container .container-head h2 {
 display: table;
 margin:auto;
-background: #00e676;
+background: #52f183;
 text-shadow:0 0 2px rgba(0, 0, 0, 0.1), 0 0 10px rgba(0, 0, 0, 0.3);
 padding: 20px;
 border-radius: 100px;}
@@ -243,8 +252,7 @@ position: absolute;
 left: 0;
 top: -35px;
 color: #fff;
-background: #502974;
-background: linear-gradient(to right bottom, #502974, #432362, #371d50, #2b173f, #20112e);
+background: #1e1e1e;
 font-size: 15px;
 line-height: 35px;
 font-weight: 600;
@@ -267,6 +275,10 @@ padding-left: 20px;}
 padding-left: 40px;}
 .container code > span.l4 {
 padding-left: 60px;}
+.container code > span.break {
+margin: 16px 0;
+float: left;
+width: 100%;}
 
 .container code > span.rqrd:hover {
 border-radius:20px;
@@ -296,6 +308,9 @@ color: #90d1ef;}
 .container code span.fnc2 {
 color: #e3e3b0;}
 
+.container code span.fnc3 {
+color: #569cd6;}
+
 .container code span.int {
 color: #b5cea4;}
 
@@ -307,6 +322,9 @@ color: #569cd6;}
 
 .container code span.the-button {
 cursor: pointer;}
+
+.container code span.imp {
+color: #b77baf;}
 /* Code off */
 
 /* Content off */
@@ -316,9 +334,8 @@ cursor: pointer;}
 /* Footer on */
 footer#Footer  {
 padding:40px 20px;
-color:#00e676;
-background: #502974;
-background: linear-gradient(to left top, #502974, #432362, #371d50, #2b173f, #20112e);
+color: #52f183;
+background: #1e1e1e;
 float: left;
 width: 100%;}
 
@@ -332,7 +349,7 @@ footer#Footer a.github {
 float: right;
 font-size: 15px;
 line-height: 15px;
-color: #00e676;
+color: #52f183;
 font-weight: 600;}
 
 footer#Footer a.github:hover {
@@ -350,7 +367,7 @@ margin-right:2px;}
 padding: 40px 20px;}
 
 .map-wrapper div#GoogleMaps {
-height: 340px !important;}
+height: 440px !important;}
 
 .map-wrapper .head {
 float: unset;

@@ -1,8 +1,16 @@
+@1.4.0
+* **Added:** Universal Module Definition.
+* **Added:** A callback function can be used after the map has been created.
+* **Changed:** Code Review.
+
+-----
+
 @1.3.0
 * **Added:** Can use a callback function for each marker infowindow close button element clicked.
 * **Changed:** Code Review.
 
 -----
+
 @1.2.0
 * **Changed:** Code Review.
 

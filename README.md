@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://raw.githubusercontent.com/furcan/Markers-On-Map/master/github-cover.png" width="768" height="auto" alt="Markers On Map">
+  <img src="https://raw.githubusercontent.com/furcan/Markers-On-Map/master/docs/github-cover.png" width="768" height="auto" alt="Markers On Map">
 </p>
 
 
@@ -8,33 +8,45 @@ Use highly customizable maps (Google Maps) with multiple custom Markers in your 
 
 
 ### Current Version
-1.3.0 [*](https://github.com/furcan/Markers-On-Map/blob/master/ReleaseNotes.md)
+1.4.0 [*](https://github.com/furcan/Markers-On-Map/blob/master/ReleaseNotes.md)
 
 ### Website and Demo
 https://furcan.github.io/Markers-On-Map/
 
+
 ---------
 
-#### Install
+#### (A) Install & Import
+
+Install
 
 ##### [npm](https://www.npmjs.com/package/markers-on-map)
-```
+```sh
 npm i markers-on-map
 ```
 ##### [yarn](https://yarnpkg.com/en/package/markers-on-map)
-```
+```sh
 yarn add markers-on-map
+```
+
+Import
+
+```jsx
+import MarkersOnMap from "markers-on-map";
 ```
 
 ---------
 
-#### 1- JavaScript
+#### (B) Adding to an HTML Document
 
 ```html
-<script src="dist/markers-on-map-1.3.0.js"></script>
+<script src="dist/markers-on-map-1.4.0.js"></script>
 ```
 
-#### 2- Initialize (Basic)
+---------
+
+
+#### 1- Initialize (Basic)
 
 ```js
 // Basic usage
@@ -54,16 +66,24 @@ MarkersOnMap.Init({
 });
 ```
 
-#### 3- Run
+#### 2- Run
 
 ```js
-// Select your element (ID or Class)
+/*
+* @param1 {string}: Required, Select the element (ID or Class)
+* @param2 {function}: Optional, A callback function after the map has been created. 
+*/
 MarkersOnMap.Run('div#GoogleMaps');
+
+// e.g. With a Callback function (v1.4.0 and the next versions)
+MarkersOnMap.Run('div#GoogleMaps', function () {
+  // codes here...
+});
 ```
 
 ---------
 
-#### 4- Remarker
+#### Remarker
 
 ```js
 // Use "MarkersOnMap.Remarker()" function to replace all markers to new ones.
@@ -244,7 +264,7 @@ MarkersOnMap.Init({
 ---------
 
 #### Copyright
-Copyright © 2019 Markers On Map
+Copyright © 2020 Markers On Map
 
 #### License
 MIT license - https://opensource.org/licenses/MIT
